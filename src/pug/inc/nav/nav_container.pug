@@ -1,0 +1,28 @@
+.container
+  .navbar-brand
+    a.navbar-item(href="https://cssninja.io")
+      img(src="assets/images/logos/fresh-alt.svg", alt="", srcset="", width="112" height="28")
+
+    .navbar-item.is-hidden-desktop.is-hidden-tablet
+      include navbar-item.html
+
+    include navbar-burger.html
+
+
+  #cloned-navbar-menu.navbar-menu.is-fixed
+    .navbar-start
+      .navbar-item.is-hidden-mobile
+        include navbar-item.html
+
+    .navbar-end
+      a.navbar-item.is-secondary(href="#") Features
+      a.navbar-item.is-secondary(href="#") Pricing
+      .navbar-item.has-dropdown.is-hoverable
+        a.navbar-link Dropdown
+        .navbar-dropdown
+          a.navbar-item Dropdown item
+          a.navbar-item Dropdown item
+          a.navbar-item Dropdown item
+      a.navbar-item.is-secondary.modal-trigger(href="#" data-modal="auth-modal") Log in
+      a.navbar-item
+        span.button.signup-button.rounded.secondary-btn.raised Sign up

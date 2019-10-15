@@ -1,36 +1,9 @@
-section.hero.is-fullheight.is-default.is-bold
+
+section.hero.is-fullheigth.is-default.is-bold
   nav.navbar.is-fresh.is-transparent.no-shadow(role="navigation" aria-label="main navigation")
-    .container
-
-      //- three row button
-      include nav.html
-
+    include nav/nav_container.pug
   nav#navbar-clone.navbar.is-fresh.is-transparent(role="navigation" aria-label="main navigation")
-    .container
-      include test1.html
+    include nav/nav_container.pug
 
-
-  .hero-body
-    .container
-      .columns.is-vcentered
-        include test3.pug
-
-  .hero-foot.mb-20
-    .container
-      .tabs.is-centered
-        ul
-          li
-            a(href="#")
-              img.partner-logo(src="assets/images/logos/clients/systek.svg", alt="", srcset="")
-          li
-            a(href="#")
-              img.partner-logo(src="assets/images/logos/clients/tribe.svg", alt="", srcset="")
-          li
-            a(href="#")
-              img.partner-logo(src="assets/images/logos/clients/kromo.svg", alt="", srcset="")
-          li
-            a(href="#")
-              img.partner-logo(src="assets/images/logos/clients/infinite.svg", alt="", srcset="")
-          li
-            a(href="#")
-              img.partner-logo(src="assets/images/logos/clients/gutwork.svg", alt="", srcset="")
+  include hero/hero-body.pug
+  include hero/hero-foot.pug
