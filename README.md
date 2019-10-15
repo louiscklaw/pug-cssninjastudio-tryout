@@ -3,7 +3,10 @@
 ### credits
 building on top of the theme https://cssninjastudio.github.io with pug refactoring
 
-### to spin
+### screenshot
+![https://raw.githubusercontent.com/louiscklaw/pug-cssninjastudio-tryout/master/documentation/sc.png](https://raw.githubusercontent.com/louiscklaw/pug-cssninjastudio-tryout/master/documentation/sc.png)
+
+### to spin it up
 ```
 npm install -d
 npm run test_server # to start the local http server
