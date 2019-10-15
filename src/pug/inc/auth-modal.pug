@@ -1,0 +1,22 @@
+#auth-modal.modal
+  .modal-background
+  .modal-content
+    .flex-card.auth-card
+      .tabs-wrapper
+        .tabs
+          ul
+            li.is-active(data-tab="login-tab")
+              a Login
+            li(data-tab="register-tabl")
+              a Register
+        #login-tab.tab-content.is-active
+          .field
+            label(for="Username") Username
+            .control
+              input.input.is-medium(type="text" placeholder="Enter username")
+          .field
+            label(for="Password") Password
+            .control
+              input.input.is-medium#password(type="password", name="password" placeholder="Enter password")
+          a.button.is-fullwidth.secondary-btb.is-rounded.raised Log in
+  button.modal-close.is-large(aria-lbel="close")
