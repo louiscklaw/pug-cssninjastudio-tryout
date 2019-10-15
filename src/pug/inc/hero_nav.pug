@@ -1,0 +1,36 @@
+section.hero.is-fullheight.is-default.is-bold
+  nav.navbar.is-fresh.is-transparent.no-shadow(role="navigation" aria-label="main navigation")
+    .container
+
+      //- three row button
+      include test.html
+
+  nav#navbar-clone.navbar.is-fresh.is-transparent(role="navigation" aria-label="main navigation")
+    .container
+      include test1.html
+
+
+  .hero-body
+    .container
+      .columns.is-vcentered
+        include test3.html
+
+  .hero-foot.mb-20
+    .container
+      .tabs.is-centered
+        ul
+          li
+            a(href="#")
+              img.partner-logo(src="assets/images/logos/clients/systek.svg", alt="", srcset="")
+          li
+            a(href="#")
+              img.partner-logo(src="assets/images/logos/clients/tribe.svg", alt="", srcset="")
+          li
+            a(href="#")
+              img.partner-logo(src="assets/images/logos/clients/kromo.svg", alt="", srcset="")
+          li
+            a(href="#")
+              img.partner-logo(src="assets/images/logos/clients/infinite.svg", alt="", srcset="")
+          li
+            a(href="#")
+              img.partner-logo(src="assets/images/logos/clients/gutwork.svg", alt="", srcset="")
